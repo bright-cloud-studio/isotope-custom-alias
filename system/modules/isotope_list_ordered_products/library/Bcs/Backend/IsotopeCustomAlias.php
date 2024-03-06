@@ -23,7 +23,7 @@ use Isotope\Model\ProductCollection\Order;
 
 class IsotopeCustomAlias extends \Isotope\Backend\Product\Alias
 {
-    public function save($varValue, DataContainer $dc)
+    public function saveCustom($varValue, DataContainer $dc)
     {
         $autoAlias = false;
         $varValue  = (string) $varValue;
