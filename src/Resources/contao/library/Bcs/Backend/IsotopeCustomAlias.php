@@ -15,7 +15,7 @@ use Isotope\Model\Payment;
 use Isotope\Model\ProductCollection\Order;
 use Isotope\Model\Shipping;
 
-class IsotopeCustomAlias extends Backend
+class IsotopeCustomAlias
 {
   function doThing()
   {
