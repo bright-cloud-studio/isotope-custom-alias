@@ -8,6 +8,6 @@
  * @see	       https://github.com/bright-cloud-studio/isotope-custom-alias
  */
   
-    //$GLOBALS['TL_WRAPPERS']['stop'][]  = 'grouping_stop';
+//$GLOBALS['TL_MODELS']['tl_order_export'] = 'Bcs\Model\OrderExport';
 
 ?>
