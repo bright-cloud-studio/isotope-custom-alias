@@ -19,6 +19,9 @@ class IsotopeCustomAlias
 {
     public function saveCustom($varValue, DataContainer $dc)
     {
+        echo "HIT";
+        die();
+        
         $varValue  = (string) $varValue;
         $varValue = "BING BONG";
     }
