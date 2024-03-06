@@ -23,5 +23,13 @@ use Isotope\Model\ProductCollection\Order;
 
 class IsotopeCustomAlias extends \Isotope\Backend\Product\Alias
 {
+    public function save($varValue, DataContainer $dc)
+    {
+        $autoAlias = false;
+        $varValue  = (string) $varValue;
 
+        $varValue = "BING BONG NOISE";
+
+        return $varValue;
+    }
 }
