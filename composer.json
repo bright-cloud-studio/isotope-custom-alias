@@ -1,41 +1,37 @@
 {
     "name":"bright-cloud-studio/isotope-custom-alias",
-    "description":"Customize product alias generation",
-    "keywords": ["contao", "isotope", "alias", "product", "bright", "cloud", "studio"],
-    "type": "contao-bundle",
+    "description":"Customize product alias",
     "homepage": "http://brightcloudstudio.com/",
-    "license": "LGPL-3.0+",
+    "keywords":["contao", "isotope", "bright", "cloud", "studio"],
+    "type":"contao-module",
+    "license":"LGPL-3.0-or-later",
     "authors":[
         {
-            "name": "Bright Cloud Studio",
-            "homepage": "https://brightcloudstudio.com",
-            "email": "mark@brightcloudstudio.com",
-            "role": "Developer"
+            "name":"Bright Cloud Studio",
+            "homepage":"https://brightcloudstudio.com"
         }
     ],
-    "support":{
-        "issues": "https://github.com/bright-cloud-studio/isotope-custom-alias/issues",
-        "source": "https://github.com/bright-cloud-studio/isotope-custom-alias"
-    },
     "require":{
-        "php": "^7.4 || ^8.0",
-        "contao/core-bundle": "^4.13"
+        "php": "^8.0",
+        "contao/core-bundle": "^4.13",
+        "isotope/isotope-core": ">=2.6"
     },
-    "extra":{
-        "contao-manager-plugin": "Bcs\\IsotopeCustomAliasBundle\\ContaoManager\\Plugin"
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
     },
     "autoload": {
         "psr-4": {
-            "Bcs\\IsotopeCustomAliasBundle\\": "src"
-        },
-        "classmap": [
-            "src/Resources/contao"
-        ],
-        "exclude-from-classmap": [
-            "src/Resources/contao/config/",
-            "src/Resources/contao/dca/",
-            "src/Resources/contao/languages/",
-            "src/Resources/contao/templates/"
-        ]
-    }
+            "Bcs\\": [
+                "system/modules/isotope_custom_alias/library/Bcs"
+            ]
+        }
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "system/modules/isotope_custom_alias": "system/modules/isotope_custom_alias"
+            }
+        }
+    },
+    "minimum-stability": "dev"
 }
