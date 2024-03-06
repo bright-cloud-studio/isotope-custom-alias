@@ -13,4 +13,4 @@
 
 
 // Frontend Modules
-//$GLOBALS['FE_MOD']['isotope']['iso_list_ordered_products'] 	= 'Bcs\Module\ListOrderedProducts';
+$GLOBALS['TL_DCA']['tl_iso_product'][''][''][''] 	= array('Bcs\Backend\IsotopeCustomAlias', 'saveCustom');
