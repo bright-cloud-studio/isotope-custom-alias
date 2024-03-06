@@ -8,6 +8,10 @@
  * @see	       https://github.com/bright-cloud-studio/isotope-custom-alias
  */
   
-//$GLOBALS['TL_MODELS']['tl_order_export'] = 'Bcs\Model\OrderExport';
+
+$GLOBALS['TL_DCA']['tl_iso_product']['fields']['alias']['save_callback'] = array('Bcs\Backend\IsotopeCustomAlias', 'saveCustom');
+
+
+
 
 ?>
