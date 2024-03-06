@@ -9,7 +9,7 @@
  */
   
 
-$GLOBALS['TL_DCA']['tl_iso_product']['fields']['alias']['save_callback'] = array('Bcs\Backend\IsotopeCustomAlias', 'saveCustom');
+$GLOBALS['TL_DCA']['tl_iso_product']['fields']['alias']['save_callback'][''] = array('Bcs\Backend\IsotopeCustomAlias', 'saveCustom');
 
 
 
